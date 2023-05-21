@@ -4,7 +4,7 @@ async function ChatBot(word) {
   let sessionID = Math.floor(Math.random() * 378974206843640 + 36893787392073);
   //   let auths = gcloud auth print-access-token;
   try {
-    let data = await fetch('https://emeterr-token.onrender.com/refresh_token')
+    let res = await fetch('https://emeterr-token.onrender.com/refresh_token')
     const data = await res.json()
     const token = data.access_token
     const response = await fetch(
