@@ -4,9 +4,7 @@ async function GetToken(){
     const res = await fetch('https://emeterr-token.onrender.com/refresh_token')
     const data = await res.json()
     const token = data.access_token
-    
     return token
-    );
   }catch(err){
   return {error: true, err: err}
   }
