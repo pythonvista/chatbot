@@ -281,8 +281,8 @@ export default defineComponent({
     },
     async TryIt(message) {
       try {
-        let res = await ChatBot(message);
-        let data = await res.json();
+        let res = ChatBot(message);
+        let data = res
         if (data.queryResult.parameters.greetings == "greetings") {
           let messages = data.queryResult.fulfillmentMessages[0].payload.message;
           let options = data.queryResult.fulfillmentMessages[0].payload.options;
