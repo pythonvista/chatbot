@@ -20,7 +20,7 @@ async function ChatBot(word) {
   try {
     let token = await this.GetToken()
     const response = await fetch(
-      `https://dialogflow.googleapis.com/v2/projects/eatrychatbot-axde/agent/sessions/${sessionID}:detectIntent`,
+      `https://dialogflow.googleapis.com/v2/projects/emeterr-bff58/agent/sessions/${sessionID}:detectIntent`,
       {
         method: "POST",
         mode: "cors",
