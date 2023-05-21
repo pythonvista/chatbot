@@ -18,7 +18,7 @@ async function ChatBot(word) {
           "Content-Type": "application/json",
           Authorization:
             `Bearer ${token}`,
-          "x-goog-user-project": "eatrychatbot-axde",
+          "x-goog-user-project": "emeterr-bff58",
         },
         redirect: "follow",
         referrerPolicy: "no-referrer",
