@@ -6,7 +6,7 @@ async function GetToken(){
     const token = data.access_token
     return token
   }catch(err){
-  return {error: true, err: err}
+  return {error: true, msg: err}
   }
 }
 
